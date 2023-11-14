@@ -1,0 +1,17 @@
+export const app = document.querySelector('#app');
+export const cartBtn = app.querySelector('#cartBtn');
+export const  searchBtn = app.querySelector('#searchBtn');
+export const  searchBar = app.querySelector('#searchBar');
+export const  searchBarInput = app.querySelector('#searchBarInput');
+export const clearInput = app.querySelector('#clearInput');
+export const cartCloseBtn = app.querySelector('#cartCloseBtn');
+export const cartBox = app.querySelector('#cartBox');
+export const cartBody = app.querySelector('#cartBox .cart-body');
+export const categoryBtn = app.querySelector('#categoryBtn');
+export const categoryList = app.querySelector('#categoryList');
+export const productCard = app.querySelector('#productCard');
+export const productList = app.querySelector('#productList');
+export const cartItem = app.querySelector('#cartItem');
+export const cartTotal = app.querySelector('#cartTotal');
+export const cartCountBadge = app.querySelector('#cartCountBadge');
+export const cartBodyCountBadge = app.querySelector('#cartBodyCountBadge');
