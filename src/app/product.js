@@ -103,8 +103,8 @@ export const productListHandler = (event) => {
         .querySelector('.cart-item:last-child')
         .getBoundingClientRect();
 
-        const animateTop = lastCartPosition ? lastCartPosition.top+10 : cartBody.getBoundingClientRect().top;
-        const animateLeft = lastCartPosition ? lastCartPosition.top+10 : cartBody.getBoundingClientRect().left;
+        const animateTop = lastCartPosition ? lastCartPosition.bottom+10 : cartBody.getBoundingClientRect().top;
+        const animateLeft = lastCartPosition ? lastCartPosition.left+10 : cartBody.getBoundingClientRect().left;
          keyframe = [
             // {transform: `translate(0, 0)`},
             // {transform: `translate(500px, 500px)`}
@@ -112,8 +112,8 @@ export const productListHandler = (event) => {
              left: currentImgPosition.left + 'px',
              
             },
-            { top: lastCartPosition.top+10 + 'px',
-             left: lastCartPosition.left+10 + 'px',
+            { top: animateTop + 'px',
+             left: animateLeft + 'px',
             height: 20 + 'px',
             rotate: '2turn'
             }
